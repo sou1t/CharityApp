@@ -24,6 +24,9 @@
 		3F1C1FD51D05B7AA00AB452F /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */; };
 		3F1C1FD71D05BC1500AB452F /* banknotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD61D05BC1500AB452F /* banknotes.png */; };
 		3F1C1FD91D05BF0B00AB452F /* barBackgr.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD81D05BF0B00AB452F /* barBackgr.png */; };
+		3F1C1FDD1D05CB5200AB452F /* add_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FDA1D05CB5200AB452F /* add_list.png */; };
+		3F1C1FDE1D05CB5200AB452F /* bank_card_back_side.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FDB1D05CB5200AB452F /* bank_card_back_side.png */; };
+		3F1C1FDF1D05CB5200AB452F /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FDC1D05CB5200AB452F /* plus.png */; };
 		3F3221081D045F80007B4A63 /* AwesomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3221071D045F80007B4A63 /* AwesomeTextField.swift */; };
 		3F32210D1D046334007B4A63 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32210C1D046334007B4A63 /* logo.png */; };
 		3F32210F1D0464C0007B4A63 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F32210E1D0464C0007B4A63 /* background.jpg */; };
@@ -117,6 +120,9 @@
 		3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		3F1C1FD61D05BC1500AB452F /* banknotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banknotes.png; path = resourses/images/banknotes.png; sourceTree = "<group>"; };
 		3F1C1FD81D05BF0B00AB452F /* barBackgr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barBackgr.png; path = resourses/images/barBackgr.png; sourceTree = "<group>"; };
+		3F1C1FDA1D05CB5200AB452F /* add_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add_list.png; path = resourses/images/add_list.png; sourceTree = "<group>"; };
+		3F1C1FDB1D05CB5200AB452F /* bank_card_back_side.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bank_card_back_side.png; path = resourses/images/bank_card_back_side.png; sourceTree = "<group>"; };
+		3F1C1FDC1D05CB5200AB452F /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = resourses/images/plus.png; sourceTree = "<group>"; };
 		3F3221071D045F80007B4A63 /* AwesomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AwesomeTextField.swift; path = librares/AwesomeTextField.swift; sourceTree = "<group>"; };
 		3F32210C1D046334007B4A63 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = resourses/images/logo.png; sourceTree = "<group>"; };
 		3F32210E1D0464C0007B4A63 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = resourses/images/background.jpg; sourceTree = "<group>"; };
@@ -238,6 +244,9 @@
 		3F32210A1D046321007B4A63 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3F1C1FDA1D05CB5200AB452F /* add_list.png */,
+				3F1C1FDB1D05CB5200AB452F /* bank_card_back_side.png */,
+				3F1C1FDC1D05CB5200AB452F /* plus.png */,
 				3F1C1FD81D05BF0B00AB452F /* barBackgr.png */,
 				3F1C1FD61D05BC1500AB452F /* banknotes.png */,
 				3F1C1FD01D05AF3E00AB452F /* exit.png */,
@@ -510,6 +519,7 @@
 				3F3221381D0466C8007B4A63 /* roboto.woff in Resources */,
 				3F32214E1D0466C8007B4A63 /* robotolightitalic.woff2 in Resources */,
 				3F3221421D0466C8007B4A63 /* robotobold.woff2 in Resources */,
+				3F1C1FDD1D05CB5200AB452F /* add_list.png in Resources */,
 				3F1C1FD11D05AF3E00AB452F /* exit.png in Resources */,
 				3F1C1FD71D05BC1500AB452F /* banknotes.png in Resources */,
 				3F3221611D046BF9007B4A63 /* ok.png in Resources */,
@@ -527,6 +537,7 @@
 				3F3221361D0466C8007B4A63 /* roboto.css in Resources */,
 				3F3221411D0466C8007B4A63 /* robotobold.woff in Resources */,
 				3F32214F1D0466C8007B4A63 /* robotomedium.ttf in Resources */,
+				3F1C1FDE1D05CB5200AB452F /* bank_card_back_side.png in Resources */,
 				3F3221441D0466C8007B4A63 /* robotobolditalic.woff in Resources */,
 				3F51450E1D0357F40038AB05 /* LaunchScreen.storyboard in Resources */,
 				3F1C1FC71D05ADC000AB452F /* back.png in Resources */,
@@ -537,6 +548,7 @@
 				3F32214C1D0466C8007B4A63 /* robotolightitalic.ttf in Resources */,
 				3F32215C1D046948007B4A63 /* Button.png in Resources */,
 				3F1C1FCB1D05ADC000AB452F /* location.png in Resources */,
+				3F1C1FDF1D05CB5200AB452F /* plus.png in Resources */,
 				3F51450B1D0357F40038AB05 /* Assets.xcassets in Resources */,
 				3F3221471D0466C8007B4A63 /* robotoitalic.woff in Resources */,
 				3F1C1FC81D05ADC000AB452F /* card_in_use.png in Resources */,
