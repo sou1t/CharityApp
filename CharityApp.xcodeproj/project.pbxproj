@@ -7,6 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342449B63D8725E3EC0D8179 /* Pods_CharityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F010B96AFEEBDB977778F47 /* Pods_CharityApp.framework */; };
+		3F1C1FBB1D0584F700AB452F /* ServerMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FBA1D0584F700AB452F /* ServerMethods.swift */; };
+		3F1C1FBD1D05A81600AB452F /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FBC1D05A81600AB452F /* SweetAlert.swift */; };
+		3F1C1FC71D05ADC000AB452F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FBE1D05ADC000AB452F /* back.png */; };
+		3F1C1FC81D05ADC000AB452F /* card_in_use.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FBF1D05ADC000AB452F /* card_in_use.png */; };
+		3F1C1FC91D05ADC000AB452F /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC01D05ADC000AB452F /* checkmark.png */; };
+		3F1C1FCA1D05ADC000AB452F /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC11D05ADC000AB452F /* forward.png */; };
+		3F1C1FCB1D05ADC000AB452F /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC21D05ADC000AB452F /* location.png */; };
+		3F1C1FCC1D05ADC000AB452F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC31D05ADC000AB452F /* settings.png */; };
+		3F1C1FCD1D05ADC000AB452F /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC41D05ADC000AB452F /* share.png */; };
+		3F1C1FCE1D05ADC000AB452F /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC51D05ADC000AB452F /* trash.png */; };
+		3F1C1FCF1D05ADC000AB452F /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FC61D05ADC000AB452F /* upload.png */; };
+		3F1C1FD11D05AF3E00AB452F /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD01D05AF3E00AB452F /* exit.png */; };
+		3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD21D05B6A600AB452F /* ListViewController.swift */; };
+		3F1C1FD51D05B7AA00AB452F /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */; };
+		3F1C1FD71D05BC1500AB452F /* banknotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD61D05BC1500AB452F /* banknotes.png */; };
+		3F3221081D045F80007B4A63 /* AwesomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3221071D045F80007B4A63 /* AwesomeTextField.swift */; };
+		3F32210D1D046334007B4A63 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32210C1D046334007B4A63 /* logo.png */; };
+		3F32210F1D0464C0007B4A63 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F32210E1D0464C0007B4A63 /* background.jpg */; };
+		3F3221361D0466C8007B4A63 /* roboto.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221111D0466C8007B4A63 /* roboto.css */; };
+		3F3221371D0466C8007B4A63 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221121D0466C8007B4A63 /* roboto.ttf */; };
+		3F3221381D0466C8007B4A63 /* roboto.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221131D0466C8007B4A63 /* roboto.woff */; };
+		3F3221391D0466C8007B4A63 /* roboto.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221141D0466C8007B4A63 /* roboto.woff2 */; };
+		3F32213A1D0466C8007B4A63 /* robotoblack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221151D0466C8007B4A63 /* robotoblack.ttf */; };
+		3F32213B1D0466C8007B4A63 /* robotoblack.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221161D0466C8007B4A63 /* robotoblack.woff */; };
+		3F32213C1D0466C8007B4A63 /* robotoblack.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221171D0466C8007B4A63 /* robotoblack.woff2 */; };
+		3F32213D1D0466C8007B4A63 /* robotoblackitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221181D0466C8007B4A63 /* robotoblackitalic.ttf */; };
+		3F32213E1D0466C8007B4A63 /* robotoblackitalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221191D0466C8007B4A63 /* robotoblackitalic.woff */; };
+		3F32213F1D0466C8007B4A63 /* robotoblackitalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F32211A1D0466C8007B4A63 /* robotoblackitalic.woff2 */; };
+		3F3221401D0466C8007B4A63 /* robotobold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F32211B1D0466C8007B4A63 /* robotobold.ttf */; };
+		3F3221411D0466C8007B4A63 /* robotobold.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F32211C1D0466C8007B4A63 /* robotobold.woff */; };
+		3F3221421D0466C8007B4A63 /* robotobold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F32211D1D0466C8007B4A63 /* robotobold.woff2 */; };
+		3F3221431D0466C8007B4A63 /* robotobolditalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F32211E1D0466C8007B4A63 /* robotobolditalic.ttf */; };
+		3F3221441D0466C8007B4A63 /* robotobolditalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F32211F1D0466C8007B4A63 /* robotobolditalic.woff */; };
+		3F3221451D0466C8007B4A63 /* robotobolditalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221201D0466C8007B4A63 /* robotobolditalic.woff2 */; };
+		3F3221461D0466C8007B4A63 /* robotoitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221211D0466C8007B4A63 /* robotoitalic.ttf */; };
+		3F3221471D0466C8007B4A63 /* robotoitalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221221D0466C8007B4A63 /* robotoitalic.woff */; };
+		3F3221481D0466C8007B4A63 /* robotoitalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221231D0466C8007B4A63 /* robotoitalic.woff2 */; };
+		3F3221491D0466C8007B4A63 /* robotolight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221241D0466C8007B4A63 /* robotolight.ttf */; };
+		3F32214A1D0466C8007B4A63 /* robotolight.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221251D0466C8007B4A63 /* robotolight.woff */; };
+		3F32214B1D0466C8007B4A63 /* robotolight.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221261D0466C8007B4A63 /* robotolight.woff2 */; };
+		3F32214C1D0466C8007B4A63 /* robotolightitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221271D0466C8007B4A63 /* robotolightitalic.ttf */; };
+		3F32214D1D0466C8007B4A63 /* robotolightitalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221281D0466C8007B4A63 /* robotolightitalic.woff */; };
+		3F32214E1D0466C8007B4A63 /* robotolightitalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221291D0466C8007B4A63 /* robotolightitalic.woff2 */; };
+		3F32214F1D0466C8007B4A63 /* robotomedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F32212A1D0466C8007B4A63 /* robotomedium.ttf */; };
+		3F3221501D0466C8007B4A63 /* robotomedium.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F32212B1D0466C8007B4A63 /* robotomedium.woff */; };
+		3F3221511D0466C8007B4A63 /* robotomedium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F32212C1D0466C8007B4A63 /* robotomedium.woff2 */; };
+		3F3221521D0466C8007B4A63 /* robotomediumitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F32212D1D0466C8007B4A63 /* robotomediumitalic.ttf */; };
+		3F3221531D0466C8007B4A63 /* robotomediumitalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F32212E1D0466C8007B4A63 /* robotomediumitalic.woff */; };
+		3F3221541D0466C8007B4A63 /* robotomediumitalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F32212F1D0466C8007B4A63 /* robotomediumitalic.woff2 */; };
+		3F3221551D0466C8007B4A63 /* robotothin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221301D0466C8007B4A63 /* robotothin.ttf */; };
+		3F3221561D0466C8007B4A63 /* robotothin.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221311D0466C8007B4A63 /* robotothin.woff */; };
+		3F3221571D0466C8007B4A63 /* robotothin.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221321D0466C8007B4A63 /* robotothin.woff2 */; };
+		3F3221581D0466C8007B4A63 /* robotothinitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221331D0466C8007B4A63 /* robotothinitalic.ttf */; };
+		3F3221591D0466C8007B4A63 /* robotothinitalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221341D0466C8007B4A63 /* robotothinitalic.woff */; };
+		3F32215A1D0466C8007B4A63 /* robotothinitalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221351D0466C8007B4A63 /* robotothinitalic.woff2 */; };
+		3F32215C1D046948007B4A63 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32215B1D046948007B4A63 /* Button.png */; };
+		3F3221601D046BF9007B4A63 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32215D1D046BF9007B4A63 /* fb.png */; };
+		3F3221611D046BF9007B4A63 /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32215E1D046BF9007B4A63 /* ok.png */; };
+		3F3221621D046BF9007B4A63 /* VK.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32215F1D046BF9007B4A63 /* VK.png */; };
 		3F5145041D0357F40038AB05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5145031D0357F40038AB05 /* AppDelegate.swift */; };
 		3F5145061D0357F40038AB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5145051D0357F40038AB05 /* ViewController.swift */; };
 		3F5145091D0357F40038AB05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5145071D0357F40038AB05 /* Main.storyboard */; };
@@ -14,6 +74,8 @@
 		3F51450E1D0357F40038AB05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F51450C1D0357F40038AB05 /* LaunchScreen.storyboard */; };
 		3F5145191D0357F40038AB05 /* CharityAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5145181D0357F40038AB05 /* CharityAppTests.swift */; };
 		3F5145241D0357F40038AB05 /* CharityAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5145231D0357F40038AB05 /* CharityAppUITests.swift */; };
+		751AFB47A21045E411A3F8FB /* Pods_CharityAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D09FE7BCC49D000184FFDAA /* Pods_CharityAppTests.framework */; };
+		E2723EA8DECF5EF2768C7B35 /* Pods_CharityAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67F4F6E5FD672F25ED35CCA /* Pods_CharityAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +96,69 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F010B96AFEEBDB977778F47 /* Pods_CharityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2891EF7D17662D6F8889E87D /* Pods-CharityAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CharityAppTests/Pods-CharityAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D09FE7BCC49D000184FFDAA /* Pods_CharityAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E97F148A22425E057A5E14B /* Pods-CharityAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CharityAppUITests/Pods-CharityAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F1C1FBA1D0584F700AB452F /* ServerMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerMethods.swift; sourceTree = "<group>"; };
+		3F1C1FBC1D05A81600AB452F /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetAlert.swift; path = librares/SweetAlert.swift; sourceTree = "<group>"; };
+		3F1C1FBE1D05ADC000AB452F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = resourses/images/back.png; sourceTree = "<group>"; };
+		3F1C1FBF1D05ADC000AB452F /* card_in_use.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_in_use.png; path = resourses/images/card_in_use.png; sourceTree = "<group>"; };
+		3F1C1FC01D05ADC000AB452F /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = resourses/images/checkmark.png; sourceTree = "<group>"; };
+		3F1C1FC11D05ADC000AB452F /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forward.png; path = resourses/images/forward.png; sourceTree = "<group>"; };
+		3F1C1FC21D05ADC000AB452F /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = resourses/images/location.png; sourceTree = "<group>"; };
+		3F1C1FC31D05ADC000AB452F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = resourses/images/settings.png; sourceTree = "<group>"; };
+		3F1C1FC41D05ADC000AB452F /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share.png; path = resourses/images/share.png; sourceTree = "<group>"; };
+		3F1C1FC51D05ADC000AB452F /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trash.png; path = resourses/images/trash.png; sourceTree = "<group>"; };
+		3F1C1FC61D05ADC000AB452F /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload.png; path = resourses/images/upload.png; sourceTree = "<group>"; };
+		3F1C1FD01D05AF3E00AB452F /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = resourses/images/exit.png; sourceTree = "<group>"; };
+		3F1C1FD21D05B6A600AB452F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
+		3F1C1FD61D05BC1500AB452F /* banknotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banknotes.png; path = resourses/images/banknotes.png; sourceTree = "<group>"; };
+		3F3221071D045F80007B4A63 /* AwesomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AwesomeTextField.swift; path = librares/AwesomeTextField.swift; sourceTree = "<group>"; };
+		3F32210C1D046334007B4A63 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = resourses/images/logo.png; sourceTree = "<group>"; };
+		3F32210E1D0464C0007B4A63 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = resourses/images/background.jpg; sourceTree = "<group>"; };
+		3F3221111D0466C8007B4A63 /* roboto.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = roboto.css; path = resourses/fonts/roboto/roboto.css; sourceTree = "<group>"; };
+		3F3221121D0466C8007B4A63 /* roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = roboto.ttf; path = resourses/fonts/roboto/roboto.ttf; sourceTree = "<group>"; };
+		3F3221131D0466C8007B4A63 /* roboto.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = roboto.woff; path = resourses/fonts/roboto/roboto.woff; sourceTree = "<group>"; };
+		3F3221141D0466C8007B4A63 /* roboto.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = roboto.woff2; path = resourses/fonts/roboto/roboto.woff2; sourceTree = "<group>"; };
+		3F3221151D0466C8007B4A63 /* robotoblack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoblack.ttf; path = resourses/fonts/roboto/robotoblack.ttf; sourceTree = "<group>"; };
+		3F3221161D0466C8007B4A63 /* robotoblack.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoblack.woff; path = resourses/fonts/roboto/robotoblack.woff; sourceTree = "<group>"; };
+		3F3221171D0466C8007B4A63 /* robotoblack.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoblack.woff2; path = resourses/fonts/roboto/robotoblack.woff2; sourceTree = "<group>"; };
+		3F3221181D0466C8007B4A63 /* robotoblackitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoblackitalic.ttf; path = resourses/fonts/roboto/robotoblackitalic.ttf; sourceTree = "<group>"; };
+		3F3221191D0466C8007B4A63 /* robotoblackitalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoblackitalic.woff; path = resourses/fonts/roboto/robotoblackitalic.woff; sourceTree = "<group>"; };
+		3F32211A1D0466C8007B4A63 /* robotoblackitalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoblackitalic.woff2; path = resourses/fonts/roboto/robotoblackitalic.woff2; sourceTree = "<group>"; };
+		3F32211B1D0466C8007B4A63 /* robotobold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotobold.ttf; path = resourses/fonts/roboto/robotobold.ttf; sourceTree = "<group>"; };
+		3F32211C1D0466C8007B4A63 /* robotobold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotobold.woff; path = resourses/fonts/roboto/robotobold.woff; sourceTree = "<group>"; };
+		3F32211D1D0466C8007B4A63 /* robotobold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotobold.woff2; path = resourses/fonts/roboto/robotobold.woff2; sourceTree = "<group>"; };
+		3F32211E1D0466C8007B4A63 /* robotobolditalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotobolditalic.ttf; path = resourses/fonts/roboto/robotobolditalic.ttf; sourceTree = "<group>"; };
+		3F32211F1D0466C8007B4A63 /* robotobolditalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotobolditalic.woff; path = resourses/fonts/roboto/robotobolditalic.woff; sourceTree = "<group>"; };
+		3F3221201D0466C8007B4A63 /* robotobolditalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotobolditalic.woff2; path = resourses/fonts/roboto/robotobolditalic.woff2; sourceTree = "<group>"; };
+		3F3221211D0466C8007B4A63 /* robotoitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoitalic.ttf; path = resourses/fonts/roboto/robotoitalic.ttf; sourceTree = "<group>"; };
+		3F3221221D0466C8007B4A63 /* robotoitalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoitalic.woff; path = resourses/fonts/roboto/robotoitalic.woff; sourceTree = "<group>"; };
+		3F3221231D0466C8007B4A63 /* robotoitalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotoitalic.woff2; path = resourses/fonts/roboto/robotoitalic.woff2; sourceTree = "<group>"; };
+		3F3221241D0466C8007B4A63 /* robotolight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotolight.ttf; path = resourses/fonts/roboto/robotolight.ttf; sourceTree = "<group>"; };
+		3F3221251D0466C8007B4A63 /* robotolight.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotolight.woff; path = resourses/fonts/roboto/robotolight.woff; sourceTree = "<group>"; };
+		3F3221261D0466C8007B4A63 /* robotolight.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotolight.woff2; path = resourses/fonts/roboto/robotolight.woff2; sourceTree = "<group>"; };
+		3F3221271D0466C8007B4A63 /* robotolightitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotolightitalic.ttf; path = resourses/fonts/roboto/robotolightitalic.ttf; sourceTree = "<group>"; };
+		3F3221281D0466C8007B4A63 /* robotolightitalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotolightitalic.woff; path = resourses/fonts/roboto/robotolightitalic.woff; sourceTree = "<group>"; };
+		3F3221291D0466C8007B4A63 /* robotolightitalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotolightitalic.woff2; path = resourses/fonts/roboto/robotolightitalic.woff2; sourceTree = "<group>"; };
+		3F32212A1D0466C8007B4A63 /* robotomedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotomedium.ttf; path = resourses/fonts/roboto/robotomedium.ttf; sourceTree = "<group>"; };
+		3F32212B1D0466C8007B4A63 /* robotomedium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotomedium.woff; path = resourses/fonts/roboto/robotomedium.woff; sourceTree = "<group>"; };
+		3F32212C1D0466C8007B4A63 /* robotomedium.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotomedium.woff2; path = resourses/fonts/roboto/robotomedium.woff2; sourceTree = "<group>"; };
+		3F32212D1D0466C8007B4A63 /* robotomediumitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotomediumitalic.ttf; path = resourses/fonts/roboto/robotomediumitalic.ttf; sourceTree = "<group>"; };
+		3F32212E1D0466C8007B4A63 /* robotomediumitalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotomediumitalic.woff; path = resourses/fonts/roboto/robotomediumitalic.woff; sourceTree = "<group>"; };
+		3F32212F1D0466C8007B4A63 /* robotomediumitalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotomediumitalic.woff2; path = resourses/fonts/roboto/robotomediumitalic.woff2; sourceTree = "<group>"; };
+		3F3221301D0466C8007B4A63 /* robotothin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothin.ttf; path = resourses/fonts/roboto/robotothin.ttf; sourceTree = "<group>"; };
+		3F3221311D0466C8007B4A63 /* robotothin.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothin.woff; path = resourses/fonts/roboto/robotothin.woff; sourceTree = "<group>"; };
+		3F3221321D0466C8007B4A63 /* robotothin.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothin.woff2; path = resourses/fonts/roboto/robotothin.woff2; sourceTree = "<group>"; };
+		3F3221331D0466C8007B4A63 /* robotothinitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothinitalic.ttf; path = resourses/fonts/roboto/robotothinitalic.ttf; sourceTree = "<group>"; };
+		3F3221341D0466C8007B4A63 /* robotothinitalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothinitalic.woff; path = resourses/fonts/roboto/robotothinitalic.woff; sourceTree = "<group>"; };
+		3F3221351D0466C8007B4A63 /* robotothinitalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothinitalic.woff2; path = resourses/fonts/roboto/robotothinitalic.woff2; sourceTree = "<group>"; };
+		3F32215B1D046948007B4A63 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = resourses/images/Button.png; sourceTree = "<group>"; };
+		3F32215D1D046BF9007B4A63 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fb.png; path = resourses/images/fb.png; sourceTree = "<group>"; };
+		3F32215E1D046BF9007B4A63 /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ok.png; path = resourses/images/ok.png; sourceTree = "<group>"; };
+		3F32215F1D046BF9007B4A63 /* VK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VK.png; path = resourses/images/VK.png; sourceTree = "<group>"; };
 		3F5145001D0357F40038AB05 /* CharityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5145031D0357F40038AB05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5145051D0357F40038AB05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +172,11 @@
 		3F51451F1D0357F40038AB05 /* CharityAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharityAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5145231D0357F40038AB05 /* CharityAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityAppUITests.swift; sourceTree = "<group>"; };
 		3F5145251D0357F40038AB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45500F0C3F623E784DD12644 /* Pods-CharityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CharityApp/Pods-CharityApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8BAD64FD5D82A19F2DDD845E /* Pods-CharityAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CharityAppTests/Pods-CharityAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B67F4F6E5FD672F25ED35CCA /* Pods_CharityAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7513210BD64A01C3917B281 /* Pods-CharityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CharityApp/Pods-CharityApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD8C439413F4609EDE9ECF48 /* Pods-CharityAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CharityAppUITests/Pods-CharityAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342449B63D8725E3EC0D8179 /* Pods_CharityApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751AFB47A21045E411A3F8FB /* Pods_CharityAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +200,115 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2723EA8DECF5EF2768C7B35 /* Pods_CharityAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1C1FB91D0584E200AB452F /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C1FBA1D0584F700AB452F /* ServerMethods.swift */,
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
+		3F3221061D045F69007B4A63 /* librares */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C1FBC1D05A81600AB452F /* SweetAlert.swift */,
+				3F3221071D045F80007B4A63 /* AwesomeTextField.swift */,
+			);
+			name = librares;
+			sourceTree = "<group>";
+		};
+		3F3221091D04631A007B4A63 /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				3F32210B1D046326007B4A63 /* fonts */,
+				3F32210A1D046321007B4A63 /* images */,
+			);
+			name = resourses;
+			sourceTree = "<group>";
+		};
+		3F32210A1D046321007B4A63 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3F1C1FD61D05BC1500AB452F /* banknotes.png */,
+				3F1C1FD01D05AF3E00AB452F /* exit.png */,
+				3F1C1FBE1D05ADC000AB452F /* back.png */,
+				3F1C1FBF1D05ADC000AB452F /* card_in_use.png */,
+				3F1C1FC01D05ADC000AB452F /* checkmark.png */,
+				3F1C1FC11D05ADC000AB452F /* forward.png */,
+				3F1C1FC21D05ADC000AB452F /* location.png */,
+				3F1C1FC31D05ADC000AB452F /* settings.png */,
+				3F1C1FC41D05ADC000AB452F /* share.png */,
+				3F1C1FC51D05ADC000AB452F /* trash.png */,
+				3F1C1FC61D05ADC000AB452F /* upload.png */,
+				3F32215D1D046BF9007B4A63 /* fb.png */,
+				3F32215E1D046BF9007B4A63 /* ok.png */,
+				3F32215F1D046BF9007B4A63 /* VK.png */,
+				3F32215B1D046948007B4A63 /* Button.png */,
+				3F32210E1D0464C0007B4A63 /* background.jpg */,
+				3F32210C1D046334007B4A63 /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		3F32210B1D046326007B4A63 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3F3221101D0466BA007B4A63 /* roboto */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		3F3221101D0466BA007B4A63 /* roboto */ = {
+			isa = PBXGroup;
+			children = (
+				3F3221111D0466C8007B4A63 /* roboto.css */,
+				3F3221121D0466C8007B4A63 /* roboto.ttf */,
+				3F3221131D0466C8007B4A63 /* roboto.woff */,
+				3F3221141D0466C8007B4A63 /* roboto.woff2 */,
+				3F3221151D0466C8007B4A63 /* robotoblack.ttf */,
+				3F3221161D0466C8007B4A63 /* robotoblack.woff */,
+				3F3221171D0466C8007B4A63 /* robotoblack.woff2 */,
+				3F3221181D0466C8007B4A63 /* robotoblackitalic.ttf */,
+				3F3221191D0466C8007B4A63 /* robotoblackitalic.woff */,
+				3F32211A1D0466C8007B4A63 /* robotoblackitalic.woff2 */,
+				3F32211B1D0466C8007B4A63 /* robotobold.ttf */,
+				3F32211C1D0466C8007B4A63 /* robotobold.woff */,
+				3F32211D1D0466C8007B4A63 /* robotobold.woff2 */,
+				3F32211E1D0466C8007B4A63 /* robotobolditalic.ttf */,
+				3F32211F1D0466C8007B4A63 /* robotobolditalic.woff */,
+				3F3221201D0466C8007B4A63 /* robotobolditalic.woff2 */,
+				3F3221211D0466C8007B4A63 /* robotoitalic.ttf */,
+				3F3221221D0466C8007B4A63 /* robotoitalic.woff */,
+				3F3221231D0466C8007B4A63 /* robotoitalic.woff2 */,
+				3F3221241D0466C8007B4A63 /* robotolight.ttf */,
+				3F3221251D0466C8007B4A63 /* robotolight.woff */,
+				3F3221261D0466C8007B4A63 /* robotolight.woff2 */,
+				3F3221271D0466C8007B4A63 /* robotolightitalic.ttf */,
+				3F3221281D0466C8007B4A63 /* robotolightitalic.woff */,
+				3F3221291D0466C8007B4A63 /* robotolightitalic.woff2 */,
+				3F32212A1D0466C8007B4A63 /* robotomedium.ttf */,
+				3F32212B1D0466C8007B4A63 /* robotomedium.woff */,
+				3F32212C1D0466C8007B4A63 /* robotomedium.woff2 */,
+				3F32212D1D0466C8007B4A63 /* robotomediumitalic.ttf */,
+				3F32212E1D0466C8007B4A63 /* robotomediumitalic.woff */,
+				3F32212F1D0466C8007B4A63 /* robotomediumitalic.woff2 */,
+				3F3221301D0466C8007B4A63 /* robotothin.ttf */,
+				3F3221311D0466C8007B4A63 /* robotothin.woff */,
+				3F3221321D0466C8007B4A63 /* robotothin.woff2 */,
+				3F3221331D0466C8007B4A63 /* robotothinitalic.ttf */,
+				3F3221341D0466C8007B4A63 /* robotothinitalic.woff */,
+				3F3221351D0466C8007B4A63 /* robotothinitalic.woff2 */,
+			);
+			name = roboto;
+			sourceTree = "<group>";
+		};
 		3F5144F71D0357F40038AB05 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +316,8 @@
 				3F5145171D0357F40038AB05 /* CharityAppTests */,
 				3F5145221D0357F40038AB05 /* CharityAppUITests */,
 				3F5145011D0357F40038AB05 /* Products */,
+				B1C40D108ECF4B45DD1A1F14 /* Pods */,
+				51D96B140A3D71AB8C16ECEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +334,17 @@
 		3F5145021D0357F40038AB05 /* CharityApp */ = {
 			isa = PBXGroup;
 			children = (
+				3F1C1FB91D0584E200AB452F /* DAL */,
+				3F3221091D04631A007B4A63 /* resourses */,
+				3F3221061D045F69007B4A63 /* librares */,
 				3F5145031D0357F40038AB05 /* AppDelegate.swift */,
 				3F5145051D0357F40038AB05 /* ViewController.swift */,
 				3F5145071D0357F40038AB05 /* Main.storyboard */,
 				3F51450A1D0357F40038AB05 /* Assets.xcassets */,
 				3F51450C1D0357F40038AB05 /* LaunchScreen.storyboard */,
 				3F51450F1D0357F40038AB05 /* Info.plist */,
+				3F1C1FD21D05B6A600AB452F /* ListViewController.swift */,
+				3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */,
 			);
 			path = CharityApp;
 			sourceTree = "<group>";
@@ -125,6 +367,29 @@
 			path = CharityAppUITests;
 			sourceTree = "<group>";
 		};
+		51D96B140A3D71AB8C16ECEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F010B96AFEEBDB977778F47 /* Pods_CharityApp.framework */,
+				2D09FE7BCC49D000184FFDAA /* Pods_CharityAppTests.framework */,
+				B67F4F6E5FD672F25ED35CCA /* Pods_CharityAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1C40D108ECF4B45DD1A1F14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45500F0C3F623E784DD12644 /* Pods-CharityApp.debug.xcconfig */,
+				B7513210BD64A01C3917B281 /* Pods-CharityApp.release.xcconfig */,
+				2891EF7D17662D6F8889E87D /* Pods-CharityAppTests.debug.xcconfig */,
+				8BAD64FD5D82A19F2DDD845E /* Pods-CharityAppTests.release.xcconfig */,
+				2E97F148A22425E057A5E14B /* Pods-CharityAppUITests.debug.xcconfig */,
+				CD8C439413F4609EDE9ECF48 /* Pods-CharityAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +397,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5145281D0357F40038AB05 /* Build configuration list for PBXNativeTarget "CharityApp" */;
 			buildPhases = (
+				9C5F78709A7721545369CDD0 /* Check Pods Manifest.lock */,
 				3F5144FC1D0357F40038AB05 /* Sources */,
 				3F5144FD1D0357F40038AB05 /* Frameworks */,
 				3F5144FE1D0357F40038AB05 /* Resources */,
+				14EBB475CFDBDAD258467F50 /* Embed Pods Frameworks */,
+				E929E1833C9712CE5969C7C5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +417,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F51452B1D0357F40038AB05 /* Build configuration list for PBXNativeTarget "CharityAppTests" */;
 			buildPhases = (
+				47078082194E254E186AE48B /* Check Pods Manifest.lock */,
 				3F5145101D0357F40038AB05 /* Sources */,
 				3F5145111D0357F40038AB05 /* Frameworks */,
 				3F5145121D0357F40038AB05 /* Resources */,
+				EC10B3D289752BAE944A382A /* Embed Pods Frameworks */,
+				F055D78CF0D7DBD9A0AF59DA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +438,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F51452E1D0357F40038AB05 /* Build configuration list for PBXNativeTarget "CharityAppUITests" */;
 			buildPhases = (
+				4BBE74931A913CA0AF191942 /* Check Pods Manifest.lock */,
 				3F51451B1D0357F40038AB05 /* Sources */,
 				3F51451C1D0357F40038AB05 /* Frameworks */,
 				3F51451D1D0357F40038AB05 /* Resources */,
+				21AD07D40204E7DBE1C20529 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,9 +502,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3221401D0466C8007B4A63 /* robotobold.ttf in Resources */,
+				3F3221561D0466C8007B4A63 /* robotothin.woff in Resources */,
+				3F3221381D0466C8007B4A63 /* roboto.woff in Resources */,
+				3F32214E1D0466C8007B4A63 /* robotolightitalic.woff2 in Resources */,
+				3F3221421D0466C8007B4A63 /* robotobold.woff2 in Resources */,
+				3F1C1FD11D05AF3E00AB452F /* exit.png in Resources */,
+				3F1C1FD71D05BC1500AB452F /* banknotes.png in Resources */,
+				3F3221611D046BF9007B4A63 /* ok.png in Resources */,
+				3F32210D1D046334007B4A63 /* logo.png in Resources */,
+				3F32213F1D0466C8007B4A63 /* robotoblackitalic.woff2 in Resources */,
+				3F1C1FCE1D05ADC000AB452F /* trash.png in Resources */,
+				3F3221541D0466C8007B4A63 /* robotomediumitalic.woff2 in Resources */,
+				3F3221551D0466C8007B4A63 /* robotothin.ttf in Resources */,
+				3F3221601D046BF9007B4A63 /* fb.png in Resources */,
+				3F32213E1D0466C8007B4A63 /* robotoblackitalic.woff in Resources */,
+				3F3221501D0466C8007B4A63 /* robotomedium.woff in Resources */,
+				3F32210F1D0464C0007B4A63 /* background.jpg in Resources */,
+				3F32214A1D0466C8007B4A63 /* robotolight.woff in Resources */,
+				3F3221461D0466C8007B4A63 /* robotoitalic.ttf in Resources */,
+				3F3221361D0466C8007B4A63 /* roboto.css in Resources */,
+				3F3221411D0466C8007B4A63 /* robotobold.woff in Resources */,
+				3F32214F1D0466C8007B4A63 /* robotomedium.ttf in Resources */,
+				3F3221441D0466C8007B4A63 /* robotobolditalic.woff in Resources */,
 				3F51450E1D0357F40038AB05 /* LaunchScreen.storyboard in Resources */,
+				3F1C1FC71D05ADC000AB452F /* back.png in Resources */,
+				3F32214B1D0466C8007B4A63 /* robotolight.woff2 in Resources */,
+				3F3221431D0466C8007B4A63 /* robotobolditalic.ttf in Resources */,
+				3F32213C1D0466C8007B4A63 /* robotoblack.woff2 in Resources */,
+				3F3221581D0466C8007B4A63 /* robotothinitalic.ttf in Resources */,
+				3F32214C1D0466C8007B4A63 /* robotolightitalic.ttf in Resources */,
+				3F32215C1D046948007B4A63 /* Button.png in Resources */,
+				3F1C1FCB1D05ADC000AB452F /* location.png in Resources */,
 				3F51450B1D0357F40038AB05 /* Assets.xcassets in Resources */,
+				3F3221471D0466C8007B4A63 /* robotoitalic.woff in Resources */,
+				3F1C1FC81D05ADC000AB452F /* card_in_use.png in Resources */,
+				3F1C1FCF1D05ADC000AB452F /* upload.png in Resources */,
+				3F3221371D0466C8007B4A63 /* roboto.ttf in Resources */,
+				3F32213B1D0466C8007B4A63 /* robotoblack.woff in Resources */,
+				3F3221491D0466C8007B4A63 /* robotolight.ttf in Resources */,
+				3F1C1FCD1D05ADC000AB452F /* share.png in Resources */,
+				3F3221511D0466C8007B4A63 /* robotomedium.woff2 in Resources */,
+				3F1C1FCC1D05ADC000AB452F /* settings.png in Resources */,
+				3F3221521D0466C8007B4A63 /* robotomediumitalic.ttf in Resources */,
+				3F32214D1D0466C8007B4A63 /* robotolightitalic.woff in Resources */,
+				3F3221571D0466C8007B4A63 /* robotothin.woff2 in Resources */,
+				3F1C1FC91D05ADC000AB452F /* checkmark.png in Resources */,
+				3F3221621D046BF9007B4A63 /* VK.png in Resources */,
 				3F5145091D0357F40038AB05 /* Main.storyboard in Resources */,
+				3F3221591D0466C8007B4A63 /* robotothinitalic.woff in Resources */,
+				3F3221391D0466C8007B4A63 /* roboto.woff2 in Resources */,
+				3F32213D1D0466C8007B4A63 /* robotoblackitalic.ttf in Resources */,
+				3F3221531D0466C8007B4A63 /* robotomediumitalic.woff in Resources */,
+				3F32215A1D0466C8007B4A63 /* robotothinitalic.woff2 in Resources */,
+				3F32213A1D0466C8007B4A63 /* robotoblack.ttf in Resources */,
+				3F3221451D0466C8007B4A63 /* robotobolditalic.woff2 in Resources */,
+				3F3221481D0466C8007B4A63 /* robotoitalic.woff2 in Resources */,
+				3F1C1FCA1D05ADC000AB452F /* forward.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +578,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14EBB475CFDBDAD258467F50 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CharityApp/Pods-CharityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21AD07D40204E7DBE1C20529 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CharityAppUITests/Pods-CharityAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47078082194E254E186AE48B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4BBE74931A913CA0AF191942 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5F78709A7721545369CDD0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E929E1833C9712CE5969C7C5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CharityApp/Pods-CharityApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC10B3D289752BAE944A382A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CharityAppTests/Pods-CharityAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F055D78CF0D7DBD9A0AF59DA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CharityAppTests/Pods-CharityAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F5144FC1D0357F40038AB05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3F5145061D0357F40038AB05 /* ViewController.swift in Sources */,
+				3F1C1FBD1D05A81600AB452F /* SweetAlert.swift in Sources */,
+				3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */,
+				3F1C1FBB1D0584F700AB452F /* ServerMethods.swift in Sources */,
+				3F1C1FD51D05B7AA00AB452F /* CharityTableViewCell.swift in Sources */,
+				3F3221081D045F80007B4A63 /* AwesomeTextField.swift in Sources */,
 				3F5145041D0357F40038AB05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,28 +852,31 @@
 		};
 		3F5145291D0357F40038AB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45500F0C3F623E784DD12644 /* Pods-CharityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CharityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Vitalyi.WillPower.CharityApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Vitalyi.CharityApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		3F51452A1D0357F40038AB05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7513210BD64A01C3917B281 /* Pods-CharityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CharityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Vitalyi.WillPower.CharityApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Vitalyi.CharityApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		3F51452C1D0357F40038AB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2891EF7D17662D6F8889E87D /* Pods-CharityAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CharityAppTests/Info.plist;
@@ -431,6 +889,7 @@
 		};
 		3F51452D1D0357F40038AB05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BAD64FD5D82A19F2DDD845E /* Pods-CharityAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CharityAppTests/Info.plist;
@@ -443,6 +902,7 @@
 		};
 		3F51452F1D0357F40038AB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E97F148A22425E057A5E14B /* Pods-CharityAppUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CharityAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,6 +914,7 @@
 		};
 		3F5145301D0357F40038AB05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8C439413F4609EDE9ECF48 /* Pods-CharityAppUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CharityAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +943,7 @@
 				3F51452A1D0357F40038AB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F51452B1D0357F40038AB05 /* Build configuration list for PBXNativeTarget "CharityAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +952,7 @@
 				3F51452D1D0357F40038AB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F51452E1D0357F40038AB05 /* Build configuration list for PBXNativeTarget "CharityAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +961,7 @@
 				3F5145301D0357F40038AB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
