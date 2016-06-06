@@ -68,7 +68,8 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
             {
             cell?.NumberOfGet.text = "\(get) из \(sum)"
                 let percente = Double(get)!/Double(sum)!
-            cell?.Percentage.text = String(format: "%02d", percente)
+            cell?.Percentage.text = String(format: "\(percente*100)%")
+            cell?.CharityProgress.progress = Float(percente)
             }
         }
         if let city = data["city"].string{
@@ -95,7 +96,7 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
 //        cell?.City.text = array[indexPath.row].location
 //        cell?.NumberOfGet.text = array[indexPath.row].numOfGet
 //        cell?.NumberOfPeople.text = array[indexPath.row].numOfPeople
-        cell?.DaysToEnd.text = array[indexPath.row].dayToEnd
+        cell?.DaysToEnd.text = "20"
 //        cell?.Percentage.text = array[indexPath.row].pecentage
 //        cell?.CharityImage.image =  UIImage(named : array[indexPath.row].image)
 //        cell?.PersonName.text = array[indexPath.row].personName

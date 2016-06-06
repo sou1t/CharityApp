@@ -10,6 +10,19 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>0778D68C6EF50B030707E0CD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_CharityAppUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>14EBB475CFDBDAD258467F50</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -29,23 +42,10 @@
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CharityApp/Pods-CharityApp-frameworks.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
-		</dict>
-		<key>1F010B96AFEEBDB977778F47</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_CharityApp.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>21AD07D40204E7DBE1C20529</key>
 		<dict>
@@ -71,19 +71,6 @@
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>2689B08E0C87D3A320E0641D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>2891EF7D17662D6F8889E87D</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -98,19 +85,6 @@
 			<string>Pods/Target Support Files/Pods-CharityAppTests/Pods-CharityAppTests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D09FE7BCC49D000184FFDAA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_CharityAppTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>2E97F148A22425E057A5E14B</key>
 		<dict>
@@ -127,12 +101,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>342449B63D8725E3EC0D8179</key>
+		<key>33B3E007B04EB12CB5A81049</key>
 		<dict>
-			<key>fileRef</key>
-			<string>1F010B96AFEEBDB977778F47</string>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_CharityApp.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>3F1C1FB91D0584E200AB452F</key>
 		<dict>
@@ -1223,8 +1203,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>342449B63D8725E3EC0D8179</string>
-				<string>4EFA6FE5142C59AFD808E19B</string>
+				<string>E790BD1CABBDA38E4D5CAEA9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1514,7 +1493,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>751AFB47A21045E411A3F8FB</string>
+				<string>9106BDA417690D02AD8F99C5</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1659,7 +1638,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E2723EA8DECF5EF2768C7B35</string>
+				<string>C02068FB5EE3AEE45A0E9708</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -2217,21 +2196,13 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>4EFA6FE5142C59AFD808E19B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2689B08E0C87D3A320E0641D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>51D96B140A3D71AB8C16ECEA</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>1F010B96AFEEBDB977778F47</string>
-				<string>2D09FE7BCC49D000184FFDAA</string>
-				<string>B67F4F6E5FD672F25ED35CCA</string>
-				<string>2689B08E0C87D3A320E0641D</string>
+				<string>33B3E007B04EB12CB5A81049</string>
+				<string>BB366BA45354DA0514D280DD</string>
+				<string>0778D68C6EF50B030707E0CD</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2239,13 +2210,6 @@ fi
 			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>751AFB47A21045E411A3F8FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2D09FE7BCC49D000184FFDAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>8BAD64FD5D82A19F2DDD845E</key>
 		<dict>
@@ -2261,6 +2225,13 @@ fi
 			<string>Pods/Target Support Files/Pods-CharityAppTests/Pods-CharityAppTests.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9106BDA417690D02AD8F99C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB366BA45354DA0514D280DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>9C5F78709A7721545369CDD0</key>
 		<dict>
@@ -2310,19 +2281,6 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B67F4F6E5FD672F25ED35CCA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_CharityAppUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>B7513210BD64A01C3917B281</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2337,6 +2295,26 @@ fi
 			<string>Pods/Target Support Files/Pods-CharityApp/Pods-CharityApp.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB366BA45354DA0514D280DD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_CharityAppTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C02068FB5EE3AEE45A0E9708</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0778D68C6EF50B030707E0CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>CD8C439413F4609EDE9ECF48</key>
 		<dict>
@@ -2353,10 +2331,10 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2723EA8DECF5EF2768C7B35</key>
+		<key>E790BD1CABBDA38E4D5CAEA9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B67F4F6E5FD672F25ED35CCA</string>
+			<string>33B3E007B04EB12CB5A81049</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
