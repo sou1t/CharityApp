@@ -36,11 +36,11 @@ class ViewController: UIViewController {
         server().auth {(result) -> () in
                 if (result == true)
                 {
-                    dispatch_async(dispatch_get_main_queue()){
-                        
+//                    dispatch_async(dispatch_get_main_queue()){
+                  
                         self.performSegueWithIdentifier("mainTonext", sender: self)
                         
-                    }
+//                    }
 
                 }
                 else
