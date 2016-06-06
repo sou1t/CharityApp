@@ -10,6 +10,8 @@ import UIKit
 
 class ListViewController: UIViewController {
 
+    var array : [HelpMe] = [HelpMe(charityName: "хочу собрать", personName: "by Anar", image: "logo", location: "Moscow", charDisc: "Коплю на ноут", pecentage: "49%", numOfGet: "3 из 6", dayToEnd: "10", numOfPeople: "250")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,10 +41,20 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
         return 1
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return array.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? CharityTableViewCell
+        
+        cell?.CharityDescription.text = array[indexPath.row].charDisc
+        cell?.CharityName.text = array[indexPath.row].charityName
+        cell?.City.text = array[indexPath.row].location
+        cell?.NumberOfGet.text = array[indexPath.row].numOfGet
+        cell?.NumberOfPeople.text = array[indexPath.row].numOfPeople
+        cell?.DaysToEnd.text = array[indexPath.row].dayToEnd
+        cell?.Percentage.text = array[indexPath.row].pecentage
+        cell?.CharityImage.image =  UIImage(named : array[indexPath.row].image)
+        cell?.PersonName.text = array[indexPath.row].personName
         return cell!
     }
 }

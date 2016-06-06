@@ -209,6 +209,10 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2NE-ng-geL">
                                                     <rect key="frame" x="8" y="0.0" width="142" height="158"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="158" id="QfS-Hz-IVb"/>
+                                                        <constraint firstAttribute="width" constant="142" id="gyg-qq-6nD"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPa-z7-lr9">
                                                     <rect key="frame" x="158" y="0.0" width="248" height="25"/>
