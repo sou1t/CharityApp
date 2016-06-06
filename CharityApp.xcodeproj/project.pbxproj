@@ -23,6 +23,7 @@
 		3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD21D05B6A600AB452F /* ListViewController.swift */; };
 		3F1C1FD51D05B7AA00AB452F /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */; };
 		3F1C1FD71D05BC1500AB452F /* banknotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD61D05BC1500AB452F /* banknotes.png */; };
+		3F1C1FD91D05BF0B00AB452F /* barBackgr.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD81D05BF0B00AB452F /* barBackgr.png */; };
 		3F3221081D045F80007B4A63 /* AwesomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3221071D045F80007B4A63 /* AwesomeTextField.swift */; };
 		3F32210D1D046334007B4A63 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F32210C1D046334007B4A63 /* logo.png */; };
 		3F32210F1D0464C0007B4A63 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F32210E1D0464C0007B4A63 /* background.jpg */; };
@@ -115,6 +116,7 @@
 		3F1C1FD21D05B6A600AB452F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		3F1C1FD61D05BC1500AB452F /* banknotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banknotes.png; path = resourses/images/banknotes.png; sourceTree = "<group>"; };
+		3F1C1FD81D05BF0B00AB452F /* barBackgr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barBackgr.png; path = resourses/images/barBackgr.png; sourceTree = "<group>"; };
 		3F3221071D045F80007B4A63 /* AwesomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AwesomeTextField.swift; path = librares/AwesomeTextField.swift; sourceTree = "<group>"; };
 		3F32210C1D046334007B4A63 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = resourses/images/logo.png; sourceTree = "<group>"; };
 		3F32210E1D0464C0007B4A63 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = resourses/images/background.jpg; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		3F32210A1D046321007B4A63 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				3F1C1FD81D05BF0B00AB452F /* barBackgr.png */,
 				3F1C1FD61D05BC1500AB452F /* banknotes.png */,
 				3F1C1FD01D05AF3E00AB452F /* exit.png */,
 				3F1C1FBE1D05ADC000AB452F /* back.png */,
@@ -547,6 +550,7 @@
 				3F3221521D0466C8007B4A63 /* robotomediumitalic.ttf in Resources */,
 				3F32214D1D0466C8007B4A63 /* robotolightitalic.woff in Resources */,
 				3F3221571D0466C8007B4A63 /* robotothin.woff2 in Resources */,
+				3F1C1FD91D05BF0B00AB452F /* barBackgr.png in Resources */,
 				3F1C1FC91D05ADC000AB452F /* checkmark.png in Resources */,
 				3F3221621D046BF9007B4A63 /* VK.png in Resources */,
 				3F5145091D0357F40038AB05 /* Main.storyboard in Resources */,
