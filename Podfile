@@ -7,6 +7,7 @@ target 'CharityApp' do
 
 pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
+pod 'SDWebImage', '~>3.8'
 
 
 end
@@ -15,6 +16,8 @@ target 'CharityAppTests' do
 
 pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
+pod 'SDWebImage', '~>3.8'
+
 
 end
 
@@ -22,6 +25,8 @@ target 'CharityAppUITests' do
 
 pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
+pod 'SDWebImage', '~>3.8'
+
 
 end
 

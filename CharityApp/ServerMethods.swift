@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+
 let ServerAdress = "http://api.chumanity.ru"
 let def = NSUserDefaults.standardUserDefaults()
 
@@ -36,6 +37,20 @@ class server {
                 }
         }
         
+    }
+    
+    func getHelpRequests(completionHandler: ((result: [JSON])->())) {
+        
+        Alamofire.request(.GET, "\(ServerAdress)/getrequests")
+            .validate()
+            .responseJSON {
+                (response) in
+                let Json = JSON(response.result.value!)
+                if let data = Json["response"].arrayValue as [JSON]?{
+                    completionHandler(result: data)
+                }
+        }
+
     }
     
     
