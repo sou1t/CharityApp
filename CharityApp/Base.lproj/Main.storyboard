@@ -43,6 +43,7 @@
         <mutableArray key="ufonts.com_ocra-medium.ttf">
             <string>OCRAMedium</string>
             <string>OCRAMedium</string>
+            <string>OCRAMedium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -543,9 +544,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678909876543" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfb-4x-YeN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12345678909876543" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfb-4x-YeN">
                                                     <rect key="frame" x="8" y="16" width="365" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="OCRAMedium" family="OCRA" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -809,7 +810,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QRH-4P-hcB"/>
-        <segue reference="rmD-Zc-lKk"/>
+        <segue reference="0Z8-yi-FGu"/>
         <segue reference="Oux-eW-kTz"/>
     </inferredMetricsTieBreakers>
 </document>
