@@ -492,6 +492,9 @@
                                 <state key="normal" image="back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8Jb-1F-MBb" kind="show" id="0Z8-yi-FGu"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="roH-Gf-3li">
                                 <rect key="frame" x="167" y="3" width="80" height="61"/>
@@ -686,6 +689,25 @@
             </objects>
             <point key="canvasLocation" x="629" y="357"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Lno-vY-D6H">
+            <objects>
+                <viewController id="IMg-q0-fRH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yEP-RH-jKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Txs-27-l03"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eeM-ER-n2p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3q-X0-x3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="1217"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Button" width="320" height="80"/>
@@ -705,4 +727,7 @@
         <image name="settings" width="25" height="25"/>
         <image name="trash" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Z8-yi-FGu"/>
+    </inferredMetricsTieBreakers>
 </document>
