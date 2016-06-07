@@ -11,7 +11,6 @@
 		3F1C1FBD1D05A81600AB452F /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FBC1D05A81600AB452F /* SweetAlert.swift */; };
 		3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD21D05B6A600AB452F /* ListViewController.swift */; };
 		3F1C1FD51D05B7AA00AB452F /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */; };
-		3F1C1FE11D05CEFB00AB452F /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FE01D05CEFB00AB452F /* TestData.swift */; };
 		3F3009F71D06EC33008F5A93 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3009F61D06EC33008F5A93 /* AddCardViewController.swift */; };
 		3F3221081D045F80007B4A63 /* AwesomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3221071D045F80007B4A63 /* AwesomeTextField.swift */; };
 		3F3221361D0466C8007B4A63 /* roboto.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221111D0466C8007B4A63 /* roboto.css */; };
@@ -91,7 +90,6 @@
 		3F1C1FBC1D05A81600AB452F /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetAlert.swift; path = librares/SweetAlert.swift; sourceTree = "<group>"; };
 		3F1C1FD21D05B6A600AB452F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
-		3F1C1FE01D05CEFB00AB452F /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3F3009F61D06EC33008F5A93 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		3F3221071D045F80007B4A63 /* AwesomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AwesomeTextField.swift; path = librares/AwesomeTextField.swift; sourceTree = "<group>"; };
 		3F3221111D0466C8007B4A63 /* roboto.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = roboto.css; path = resourses/fonts/roboto/roboto.css; sourceTree = "<group>"; };
@@ -295,7 +293,6 @@
 				3F51450F1D0357F40038AB05 /* Info.plist */,
 				3F1C1FD21D05B6A600AB452F /* ListViewController.swift */,
 				3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */,
-				3F1C1FE01D05CEFB00AB452F /* TestData.swift */,
 				3F7525BB1D06257000486769 /* CharityApp-Bridging-Header.h */,
 				3F866FA71D0647EA0045E5B6 /* SettingsViewController.swift */,
 				3F866FA91D064C8C0045E5B6 /* CardTableViewCell.swift */,
@@ -647,7 +644,6 @@
 				3F5145061D0357F40038AB05 /* ViewController.swift in Sources */,
 				3F1C1FBD1D05A81600AB452F /* SweetAlert.swift in Sources */,
 				3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */,
-				3F1C1FE11D05CEFB00AB452F /* TestData.swift in Sources */,
 				3F1C1FBB1D0584F700AB452F /* ServerMethods.swift in Sources */,
 				3F866FAA1D064C8C0045E5B6 /* CardTableViewCell.swift in Sources */,
 				3F3009F71D06EC33008F5A93 /* AddCardViewController.swift in Sources */,
