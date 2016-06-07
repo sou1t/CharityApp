@@ -14,6 +14,15 @@ import SwiftyJSON
 let ServerAdress = "http://api.chumanity.ru"
 let def = NSUserDefaults.standardUserDefaults()
 
+extension String {
+    func replace(string:String, replacement:String) -> String {
+        return self.stringByReplacingOccurrencesOfString(string, withString: replacement, options: NSStringCompareOptions.LiteralSearch, range: nil)
+    }
+    
+    func removeWhitespace() -> String {
+        return self.replace(" ", replacement: "")
+    }
+}
 
 class server {
     
@@ -84,11 +93,14 @@ class server {
         let cardno = def.valueForKey("cardno") as? String ?? ""
         let cvc = def.valueForKey("cvc") as? String ?? ""
         let validdate = def.valueForKey("validdate") as? String ?? ""
-        let holdername = def.valueForKey("holdername") as? String ?? ""
+        let holdername = (def.valueForKey("holdername") as? String ?? "").removeWhitespace()
+        print("WARNING!!!!!!!!!  \(holdername)")
+
         Alamofire.request(.GET, "\(ServerAdress)/addcard?uid=\(uid)&cardno=\(cardno)&cvc=\(cvc)&validdate=\(validdate)&holdername=\(holdername)&type=visa")
             .validate()
             .responseJSON {
                 (response) in
+                print(response.request?.URLString)
                 let Json = JSON(response.result.value!)
                 completionHandler(result: Json["result"])
         }
