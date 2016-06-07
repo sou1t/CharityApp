@@ -77,6 +77,28 @@ class server {
         }
         
     }
+    
+    func addCard(completionHandler: ((result: JSON)->())){
+        
+        let uid = def.valueForKey("uid") as? String ?? ""
+        let cardno = def.valueForKey("cardno") as? String ?? ""
+        let cvc = def.valueForKey("cvc") as? String ?? ""
+        let validdate = def.valueForKey("validdate") as? String ?? ""
+        let holdername = def.valueForKey("holdername") as? String ?? ""
+        Alamofire.request(.GET, "\(ServerAdress)/addcard?uid=\(uid)&cardno=\(cardno)&cvc=\(cvc)&validdate=\(validdate)&holdername=\(holdername)&type=visa")
+            .validate()
+            .responseJSON {
+                (response) in
+                let Json = JSON(response.result.value!)
+                completionHandler(result: Json["result"])
+        }
+    }
+    
+    
+    
+    
+    
+    
 
     
     

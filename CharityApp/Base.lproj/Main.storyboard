@@ -693,10 +693,10 @@
             </objects>
             <point key="canvasLocation" x="629" y="357"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Card View Controller-->
         <scene sceneID="Lno-vY-D6H">
             <objects>
-                <viewController id="IMg-q0-fRH" sceneMemberID="viewController">
+                <viewController id="IMg-q0-fRH" customClass="AddCardViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yEP-RH-jKd"/>
                         <viewControllerLayoutGuide type="bottom" id="Txs-27-l03"/>
@@ -716,7 +716,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="back"/>
                                 <connections>
-                                    <segue destination="EEl-uN-mym" kind="show" id="Oux-eW-kTz"/>
+                                    <segue destination="EEl-uN-mym" kind="show" identifier="AddToSettings" id="Oux-eW-kTz"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="ATF-lE-Olw">
@@ -732,6 +732,9 @@
                                 <state key="normal" title="Добавить">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddButtonClick:" destination="IMg-q0-fRH" eventType="touchUpInside" id="rHw-YG-zdn"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CardNo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LsJ-9A-aVx">
                                 <rect key="frame" x="44" y="226" width="318" height="26"/>
@@ -758,6 +761,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="CVC" destination="fKA-p5-rSB" id="QaE-uf-FVF"/>
+                        <outlet property="CardNo" destination="LsJ-9A-aVx" id="ysj-q1-3Y8"/>
+                        <outlet property="HolderName" destination="Tg9-aC-IN8" id="rU0-l8-rrg"/>
+                        <outlet property="ValidDate" destination="ljq-4s-GOQ" id="DsL-1W-gnx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3q-X0-x3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

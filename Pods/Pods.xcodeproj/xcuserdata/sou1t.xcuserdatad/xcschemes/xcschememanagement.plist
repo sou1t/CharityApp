@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ESPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CharityApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6AE7312BCE6213F55E8D19C3EFDE2A42</key>
+		<key>21254FD4C129CE77437ECF319D28F67B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B91D569F8DB475B36F1848013449EBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C8CD88BDAACF074EA3D49E1344E55E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,22 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8595717C66224BDF932336D1A12B1BCA</key>
+		<key>8561B866C6210F869EA60D6862F9D122</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8990CD56F7DF57A84C9D9BAC9E03CEB2</key>
+		<key>8C46A6C6638BAE279F3F9B9DE275A3D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA5869AFB5B44E048A8AC90DC8FAB6A9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FDB24784DAEC111DFCC31587880DEC4F</key>
+		<key>EF57DBA3E4BE64D391D59D0FA1814DF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import SDWebImage
+import ESPullToRefresh
 
 class ListViewController: UIViewController {
 
@@ -23,6 +24,15 @@ class ListViewController: UIViewController {
             self.datas = result
             self.table.reloadData()
         }
+        self.table.es_addPullToRefresh {
+            [weak self] in
+            server().getHelpRequests {(result) -> () in
+                self!.datas = result
+                self!.table.reloadData()
+                self?.table.es_stopPullToRefresh(completion: true)
+                self?.table.es_stopPullToRefresh(completion: true, ignoreFooter: false)
+            }
+    }
 
         // Do any additional setup after loading the view.
     }

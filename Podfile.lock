@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.0)
+  - ESPullToRefresh (1.0.3)
   - SDWebImage (3.8.0):
     - SDWebImage/Core (= 3.8.0)
   - SDWebImage/Core (3.8.0)
@@ -7,11 +8,13 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
+  - ESPullToRefresh (~> 1.0)
   - SDWebImage (~> 3.8)
   - SwiftyJSON (~> 2.3)
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  ESPullToRefresh: 455da721fd0040daee5459426d567fee73ec3855
   SDWebImage: 7d9fe229266696de91eadf840c77ca15efd4bbd2
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

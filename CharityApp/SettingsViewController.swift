@@ -21,6 +21,16 @@ class SettingsViewController: UIViewController {
             self.datas = result
             self.table1.reloadData()
             
+            
+        }
+        self.table1.es_addPullToRefresh {
+            [weak self] in
+            server().getCardsOfUser {(result) -> () in
+                self!.datas = result
+                self!.table1.reloadData()
+                self?.table1.es_stopPullToRefresh(completion: true)
+                self?.table1.es_stopPullToRefresh(completion: true, ignoreFooter: false)
+            }
         }
         server().getUserInfo{(result) in
             if let photo = result[0]["photo"].string{
