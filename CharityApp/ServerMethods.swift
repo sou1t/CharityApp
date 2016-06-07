@@ -63,6 +63,24 @@ class server {
         }
         
     }
+    
+    func getUserInfo(completionHandler: ((result: JSON)->())) {
+        
+        let uid = def.valueForKey("uid") as? String ?? ""
+        
+        Alamofire.request(.GET, "\(ServerAdress)/getuser?uid=\(uid)")
+            .validate()
+            .responseJSON {
+                (response) in
+                let Json = JSON(response.result.value!)
+                completionHandler(result: Json["response"])
+        }
+        
+    }
+
+    
+    
+    
 
     
     

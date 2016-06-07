@@ -568,7 +568,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-GX-elS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-GX-elS">
                                 <rect key="frame" x="147" y="76" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="50L-a8-HHu"/>
@@ -658,6 +658,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="photo" destination="1Lh-GX-elS" id="v1b-0S-WaT"/>
                         <outlet property="table1" destination="sTZ-ME-FTk" id="ZZv-I9-pJn"/>
                     </connections>
                 </viewController>
@@ -688,6 +689,7 @@
     </scenes>
     <resources>
         <image name="Button" width="320" height="80"/>
+        <image name="NoAvatar" width="799" height="940"/>
         <image name="VK" width="200" height="200"/>
         <image name="back" width="25" height="25"/>
         <image name="background" width="1242" height="2049"/>

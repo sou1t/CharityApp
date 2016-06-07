@@ -13,12 +13,21 @@ import SDWebImage
 class SettingsViewController: UIViewController {
     var datas: [JSON] = []
 
+    @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var table1: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         server().getCardsOfUser{(result) in
             self.datas = result
             self.table1.reloadData()
+            
+        }
+        server().getUserInfo{(result) in
+            if let photo = result[0]["photo"].string{
+                print(photo)
+                let url = NSURL(string: photo)
+                self.photo.sd_setImageWithURL(url)
+            }
             
         }
 
