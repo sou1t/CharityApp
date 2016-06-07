@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
+    var datas: JSON = []
     @IBOutlet weak var password: AwesomeTextField!
     @IBOutlet weak var login: AwesomeTextField!
     
@@ -34,21 +35,29 @@ class ViewController: UIViewController {
         def.setValue(login.text, forKey: "user")
         def.setValue(password.text, forKey: "pass")
         
-        server().auth {(result) -> () in
-                if (result == true)
-                {
-//                    dispatch_async(dispatch_get_main_queue()){
-                  
-                        self.performSegueWithIdentifier("mainTonext", sender: self)
-                        
-//                    }
 
-                }
-                else
+            server().auth{(result) -> () in
+                self.datas = result
+                print(result)
+                if(self.datas["response"].string! == "error")
                 {
                     SweetAlert().showAlert("Ошибка входа!", subTitle: "Проверьте введенные данные", style: AlertStyle.Error)
                 }
+                
+                else
+                {
+                    let uid = Int(self.datas["response"].string!)
+                    self.def.setValue(uid, forKey: "uid")
+                    self.performSegueWithIdentifier("mainTonext", sender: self)
+                }
         }
+
+
+
+
+        
+
+
         
     }
     

@@ -17,7 +17,7 @@ let def = NSUserDefaults.standardUserDefaults()
 
 class server {
     
-    func auth(completionHandler: ((result: Bool)->())) {
+    func auth(completionHandler: ((result: JSON)->())) {
         
         let user = def.valueForKey("user") as? String ?? "u"
         let pass = def.valueForKey("pass") as? String ?? "p"
@@ -27,15 +27,10 @@ class server {
             .responseJSON {
                 (response) in
                 let Json = JSON(response.result.value!)
-                if (Json["result"] == true)
-                {
-                    completionHandler(result: true)
-                }
-                else
-                {
-                    completionHandler(result: false)
-                }
-        }
+                print(Json)
+                                    completionHandler(result: Json)
+
+            }
         
     }
     

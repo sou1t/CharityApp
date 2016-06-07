@@ -13,8 +13,6 @@ import SDWebImage
 class ListViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
-    var array : [HelpMe] = [HelpMe(charityName: "хочу собрать", personName: "by Anar", image: "logo", location: "Moscow", charDisc: "Коплю на ноут", pecentage: "49%", numOfGet: "3 из 6", dayToEnd: "10", numOfPeople: "250")]
-    
     var datas: [JSON] = []
     
     override func viewDidLoad() {
