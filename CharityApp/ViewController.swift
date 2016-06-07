@@ -18,12 +18,19 @@ class ViewController: UIViewController {
     let def = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let uid = def.valueForKey("uid") as? String ?? ""
+        print(uid)
+        if (def.valueForKey("uid") as? String ?? "" != "")
+        {
+            self.performSegueWithIdentifier("mainTonext", sender: self)
+        }
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+                // Dispose of any resources that can be recreated.
     }
     
     

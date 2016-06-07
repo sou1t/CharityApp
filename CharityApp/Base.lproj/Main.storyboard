@@ -428,6 +428,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.97425142730000003" green="0.96312742880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="exit"/>
+                                <connections>
+                                    <action selector="logoutClick:" destination="8Jb-1F-MBb" eventType="touchUpInside" id="Nod-as-FyG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg9-yG-OVF">
                                 <rect key="frame" x="0.0" y="20" width="44" height="44"/>
@@ -462,6 +465,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="table" destination="1iD-bL-zVj" id="vgq-DQ-ioW"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logout" id="QRH-4P-hcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXX-JC-Sya" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -794,7 +798,8 @@
         <image name="trash" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Z8-yi-FGu"/>
-        <segue reference="Oux-eW-kTz"/>
+        <segue reference="QRH-4P-hcB"/>
+        <segue reference="rmD-Zc-lKk"/>
+        <segue reference="Ya3-aB-i6Y"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -101,4 +101,11 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 210
     }
+    
+    
+    @IBAction func logoutClick(sender: AnyObject) {
+        def.setValue("", forKeyPath: "uid")
+        self.performSegueWithIdentifier("logout", sender: self)
+    }
+    
 }
