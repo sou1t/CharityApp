@@ -467,10 +467,10 @@
             </objects>
             <point key="canvasLocation" x="1606" y="357"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="aic-Kf-H7q">
             <objects>
-                <viewController id="EEl-uN-mym" sceneMemberID="viewController">
+                <viewController id="EEl-uN-mym" customClass="SettingsViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D9j-mD-0bx"/>
                         <viewControllerLayoutGuide type="bottom" id="RIx-Rh-SYW"/>
@@ -520,7 +520,7 @@
                                 <rect key="frame" x="0.0" y="456" width="414" height="212"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="fvu-ZZ-Ely">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="55" id="fvu-ZZ-Ely" customClass="CardTableViewCell" customModule="CharityApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fvu-ZZ-Ely" id="gmk-Gv-Wk8">
@@ -549,8 +549,16 @@
                                                 <constraint firstItem="DAe-Hs-E5q" firstAttribute="leading" secondItem="yfb-4x-YeN" secondAttribute="trailing" constant="4" id="y6h-d4-jAp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CardNo" destination="yfb-4x-YeN" id="KoT-yR-aPk"/>
+                                            <outlet property="DeleteButton" destination="DAe-Hs-E5q" id="Q6Y-jB-P0E"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EEl-uN-mym" id="1n8-wE-mMy"/>
+                                    <outlet property="delegate" destination="EEl-uN-mym" id="f16-Rd-LKD"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-c1-bMd" customClass="AwesomeTextField" customModule="CharityApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="303" width="374" height="50"/>
@@ -649,6 +657,9 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="table1" destination="sTZ-ME-FTk" id="ZZv-I9-pJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cel-mc-5xC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

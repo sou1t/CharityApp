@@ -48,5 +48,22 @@ class server {
 
     }
     
+    func getCardsOfUser(completionHandler: ((result: [JSON])->())) {
+        
+        let uid = def.valueForKey("uid") as? String ?? ""
+        
+        Alamofire.request(.GET, "\(ServerAdress)/getcards?uid=\(uid)")
+            .validate()
+            .responseJSON {
+                (response) in
+                let Json = JSON(response.result.value!)
+                if let data = Json["response"].arrayValue as [JSON]?{
+                    completionHandler(result: data)
+                }
+        }
+        
+    }
+
+    
     
 }

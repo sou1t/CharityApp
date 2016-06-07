@@ -46,7 +46,7 @@ class ViewController: UIViewController {
                 
                 else
                 {
-                    let uid = Int(self.datas["response"].string!)
+                    let uid = self.datas["response"].string
                     self.def.setValue(uid, forKey: "uid")
                     self.performSegueWithIdentifier("mainTonext", sender: self)
                 }
