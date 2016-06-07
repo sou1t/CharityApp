@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddCardViewController: UIViewController {
+class AddCardViewController: UIViewController, UITextFieldDelegate {
     
     let def = NSUserDefaults.standardUserDefaults()
     @IBOutlet weak var CVC: UITextField!
@@ -17,6 +17,10 @@ class AddCardViewController: UIViewController {
     @IBOutlet weak var CardNo: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.CVC.delegate = self;
+        self.HolderName.delegate = self;
+        self.ValidDate.delegate = self;
+        self.CardNo.delegate = self;
 
         // Do any additional setup after loading the view.
     }
@@ -62,5 +66,8 @@ class AddCardViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

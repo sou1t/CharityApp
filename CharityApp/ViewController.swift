@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     var datas: JSON = []
     @IBOutlet weak var password: AwesomeTextField!
     @IBOutlet weak var login: AwesomeTextField!
@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     let def = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.login.delegate = self;
+        self.password.delegate = self;
         let uid = def.valueForKey("uid") as? String ?? ""
         print(uid)
         if (def.valueForKey("uid") as? String ?? "" != "")
@@ -74,6 +76,12 @@ class ViewController: UIViewController {
     
     @IBAction func vk_click(sender: AnyObject) {
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
+
 

@@ -3,7 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="robotolight.ttf">
+            <string>Roboto-Light</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -14,14 +20,47 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eO6-xD-5PV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-CI-pWJ">
+                                <rect key="frame" x="59" y="267" width="296" height="202"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CharityHumanity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtY-ak-MjY">
+                                <rect key="frame" x="6" y="477" width="399" height="70"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eO6-xD-5PV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2kQ-uW-6hC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GtY-ak-MjY" secondAttribute="trailing" constant="-11" id="8Nn-Z6-cdC"/>
+                            <constraint firstItem="Pnz-CI-pWJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="39" id="WUo-Oi-gHg"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="eO6-xD-5PV" secondAttribute="bottom" id="X5d-ia-Zgb"/>
+                            <constraint firstItem="eO6-xD-5PV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bsK-F1-sw3"/>
+                            <constraint firstAttribute="trailing" secondItem="eO6-xD-5PV" secondAttribute="trailing" id="d0X-jC-7Zg"/>
+                            <constraint firstItem="Pnz-CI-pWJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="247" id="fZb-d6-k1b"/>
+                            <constraint firstItem="GtY-ak-MjY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-14" id="hat-SP-f7U"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="GtY-ak-MjY" secondAttribute="bottom" constant="189" id="kIo-tE-krL"/>
+                            <constraint firstItem="Pnz-CI-pWJ" firstAttribute="centerY" secondItem="eO6-xD-5PV" secondAttribute="centerY" id="kei-FS-GRo"/>
+                            <constraint firstItem="GtY-ak-MjY" firstAttribute="top" secondItem="Pnz-CI-pWJ" secondAttribute="bottom" constant="8" symbolic="YES" id="omO-mq-dn3"/>
+                            <constraint firstItem="Pnz-CI-pWJ" firstAttribute="centerX" secondItem="eO6-xD-5PV" secondAttribute="centerX" id="vS4-ty-4za"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="1242" height="2049"/>
+        <image name="logo" width="266" height="201"/>
+    </resources>
 </document>
