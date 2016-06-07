@@ -12,6 +12,9 @@
 		3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD21D05B6A600AB452F /* ListViewController.swift */; };
 		3F1C1FD51D05B7AA00AB452F /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */; };
 		3F3009F71D06EC33008F5A93 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3009F61D06EC33008F5A93 /* AddCardViewController.swift */; };
+		3F3009FB1D06FBB6008F5A93 /* Carbon-14 Stout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3009F81D06FBB6008F5A93 /* Carbon-14 Stout.ttf */; };
+		3F3009FC1D06FBB6008F5A93 /* halter in Resources */ = {isa = PBXBuildFile; fileRef = 3F3009F91D06FBB6008F5A93 /* halter */; };
+		3F3009FD1D06FBB6008F5A93 /* ufonts.com_ocra-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3009FA1D06FBB6008F5A93 /* ufonts.com_ocra-medium.ttf */; };
 		3F3221081D045F80007B4A63 /* AwesomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3221071D045F80007B4A63 /* AwesomeTextField.swift */; };
 		3F3221361D0466C8007B4A63 /* roboto.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221111D0466C8007B4A63 /* roboto.css */; };
 		3F3221371D0466C8007B4A63 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221121D0466C8007B4A63 /* roboto.ttf */; };
@@ -91,6 +94,9 @@
 		3F1C1FD21D05B6A600AB452F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3F1C1FD41D05B7AA00AB452F /* CharityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		3F3009F61D06EC33008F5A93 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		3F3009F81D06FBB6008F5A93 /* Carbon-14 Stout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Carbon-14 Stout.ttf"; path = "resourses/fonts/Carbon-14 Stout.ttf"; sourceTree = "<group>"; };
+		3F3009F91D06FBB6008F5A93 /* halter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = halter; path = resourses/fonts/halter; sourceTree = "<group>"; };
+		3F3009FA1D06FBB6008F5A93 /* ufonts.com_ocra-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ufonts.com_ocra-medium.ttf"; path = "resourses/fonts/ufonts.com_ocra-medium.ttf"; sourceTree = "<group>"; };
 		3F3221071D045F80007B4A63 /* AwesomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AwesomeTextField.swift; path = librares/AwesomeTextField.swift; sourceTree = "<group>"; };
 		3F3221111D0466C8007B4A63 /* roboto.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = roboto.css; path = resourses/fonts/roboto/roboto.css; sourceTree = "<group>"; };
 		3F3221121D0466C8007B4A63 /* roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = roboto.ttf; path = resourses/fonts/roboto/roboto.ttf; sourceTree = "<group>"; };
@@ -208,6 +214,9 @@
 		3F32210B1D046326007B4A63 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				3F3009F81D06FBB6008F5A93 /* Carbon-14 Stout.ttf */,
+				3F3009F91D06FBB6008F5A93 /* halter */,
+				3F3009FA1D06FBB6008F5A93 /* ufonts.com_ocra-medium.ttf */,
 				3F3221101D0466BA007B4A63 /* roboto */,
 			);
 			name = fonts;
@@ -464,10 +473,12 @@
 				3F3221551D0466C8007B4A63 /* robotothin.ttf in Resources */,
 				3F32213E1D0466C8007B4A63 /* robotoblackitalic.woff in Resources */,
 				3F3221501D0466C8007B4A63 /* robotomedium.woff in Resources */,
+				3F3009FC1D06FBB6008F5A93 /* halter in Resources */,
 				3F32214A1D0466C8007B4A63 /* robotolight.woff in Resources */,
 				3F3221461D0466C8007B4A63 /* robotoitalic.ttf in Resources */,
 				3F3221361D0466C8007B4A63 /* roboto.css in Resources */,
 				3F3221411D0466C8007B4A63 /* robotobold.woff in Resources */,
+				3F3009FD1D06FBB6008F5A93 /* ufonts.com_ocra-medium.ttf in Resources */,
 				3F32214F1D0466C8007B4A63 /* robotomedium.ttf in Resources */,
 				3F3221441D0466C8007B4A63 /* robotobolditalic.woff in Resources */,
 				3F51450E1D0357F40038AB05 /* LaunchScreen.storyboard in Resources */,
@@ -480,6 +491,7 @@
 				3F3221471D0466C8007B4A63 /* robotoitalic.woff in Resources */,
 				3F3221371D0466C8007B4A63 /* roboto.ttf in Resources */,
 				3F32213B1D0466C8007B4A63 /* robotoblack.woff in Resources */,
+				3F3009FB1D06FBB6008F5A93 /* Carbon-14 Stout.ttf in Resources */,
 				3F3221491D0466C8007B4A63 /* robotolight.ttf in Resources */,
 				3F3221511D0466C8007B4A63 /* robotomedium.woff2 in Resources */,
 				3F3221521D0466C8007B4A63 /* robotomediumitalic.ttf in Resources */,
