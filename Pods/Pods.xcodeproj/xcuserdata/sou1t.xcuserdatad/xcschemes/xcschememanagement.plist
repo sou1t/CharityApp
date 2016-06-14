@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CryptoSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ESPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,20 +44,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>VK-ios-sdk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21254FD4C129CE77437ECF319D28F67B</key>
+		<key>1336B5F92A126B1CFE402F52133CE273</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B91D569F8DB475B36F1848013449EBD</key>
+		<key>30943B25F0DEC51D0012EB94E0670356</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C8CD88BDAACF074EA3D49E1344E55E5</key>
+		<key>6458672567C478E3A0883FBCD697A96B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8561B866C6210F869EA60D6862F9D122</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8C46A6C6638BAE279F3F9B9DE275A3D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF57DBA3E4BE64D391D59D0FA1814DF7</key>
+		<key>A73D3C4A9A2D624FBE0A70FE1BE8DD2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AEF604B07A4E1F7A9F6603D36DAE4465</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D79C30AB95F6C00DFE76D1DC2D3F449D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8DB8B0EF4684448694560F7F5E21CDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

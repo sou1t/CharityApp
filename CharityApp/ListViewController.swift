@@ -25,6 +25,7 @@ class ListViewController: UIViewController {
             self.table.reloadData()
         }
         self.table.es_addPullToRefresh {
+            
             [weak self] in
             server().getHelpRequests {(result) -> () in
                 self!.datas = result
@@ -53,7 +54,62 @@ class ListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    var tField: UITextField!
+    
+    func configurationTextField(textField: UITextField!)
+    {
+        print("generating the TextField")
+        textField.placeholder = "Сумма в рублях"
+        tField = textField
+    }
+    
+    
+    func handleCancel(alertView: UIAlertAction!)
+    {
+        print("Cancelled !!")
+    }
+    
+    
+    
+    func Clicked(sender: UIButton) {
+        let index = sender.tag
+            let alert = UIAlertController(title: "Введите сумму пожертвования", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addTextFieldWithConfigurationHandler(configurationTextField)
+            alert.addAction(UIAlertAction(title: "Отмена", style: UIAlertActionStyle.Cancel, handler:handleCancel))
+            alert.addAction(UIAlertAction(title: "Готово", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction)in
+                print("Done !!")
+                def.setObject(self.tField.text, forKey: "aid")
+                let data = self.datas[index]
+                let id = data["requestid"].string
+                def.setObject(id, forKey: "requestid")
+                server().help{(result) in
+                    if (result == true){
+                        
+                        let name = data["cardname"].string!
+                        let aidsum = self.tField.text!
+                        SweetAlert().showAlert("\(name)", subTitle: "Вы пожертвовали \(aidsum)руб", style: AlertStyle.Success)
+                        server().getHelpRequests {(result) -> () in
+                            self.datas = result
+                            self.table.reloadData()
+                        }
+                    }
+                    else
+                    {
+                       SweetAlert().showAlert("Ошибка", subTitle: "Повторите попытку", style: AlertStyle.Error)
+                    }
+                    
+                }
+                print("Item : \(self.tField.text) index: \(index+1)")
+            }))
+            self.presentViewController(alert, animated: true, completion: {
+                print("completion block")
+            })
 
+    }
+    
+
+   
 }
 
 extension ListViewController:UITableViewDelegate, UITableViewDataSource{
@@ -76,9 +132,9 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
         if let sum = data["sum"].string{
             if let get = data["alredyHave"].string
             {
-            cell?.NumberOfGet.text = "\(get) из \(sum)"
+            cell?.NumberOfGet.text = "\(get)"
                 let percente = Double(get)!/Double(sum)!
-            cell?.Percentage.text = String(format: "\(percente*100)%")
+            cell?.Percentage.text = String(format: "\(round(percente*1000)/10)%%")
             cell?.CharityProgress.progress = Float(percente)
             }
         }
@@ -94,6 +150,8 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
         }
 
         cell?.DaysToEnd.text = "20"
+        cell?.HelpButton.tag = indexPath.row
+        cell?.HelpButton.addTarget(self, action: #selector(self.Clicked(_:)), forControlEvents: .TouchUpInside)
 
         return cell!
     }
@@ -108,4 +166,9 @@ extension ListViewController:UITableViewDelegate, UITableViewDataSource{
         self.performSegueWithIdentifier("logout", sender: self)
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
+     
 }

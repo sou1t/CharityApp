@@ -94,9 +94,30 @@ class server {
         let cvc = def.valueForKey("cvc") as? String ?? ""
         let validdate = def.valueForKey("validdate") as? String ?? ""
         let holdername = (def.valueForKey("holdername") as? String ?? "").removeWhitespace()
-        print("WARNING!!!!!!!!!  \(holdername)")
-
-        Alamofire.request(.GET, "\(ServerAdress)/addcard?uid=\(uid)&cardno=\(cardno)&cvc=\(cvc)&validdate=\(validdate)&holdername=\(holdername)&type=visa")
+        
+        let parameters = [
+            "uid": uid,
+            "cardno": cardno,
+            "cvc": cvc,
+            "validdate": validdate,
+            "holdername": holdername,
+            "type": "visa"
+            ]
+        
+        Alamofire.request(.POST, "\(ServerAdress)/addNewCard", parameters: parameters, encoding: .URL).responseJSON{
+            (response) in
+            print(response.request?.URLString)
+            let Json = JSON(response.result.value!)
+            completionHandler(result: Json["result"])
+            
+        }
+        }
+    
+    func deleteCard(completionHandler: ((result: JSON)->())){
+        
+        let uid = def.valueForKey("uid") as? String ?? ""
+        let cardid = def.valueForKey("cardid") as? String ?? ""
+        Alamofire.request(.GET, "\(ServerAdress)/deleteCards?uid=\(uid)&cardid=\(cardid)")
             .validate()
             .responseJSON {
                 (response) in
@@ -105,10 +126,28 @@ class server {
                 completionHandler(result: Json["result"])
         }
     }
+
     
-    
-    
-    
+    func help(completionHandler: ((result: JSON)->())){
+        
+        let uid = def.valueForKey("uid") as? String ?? ""
+        let requestid = def.valueForKey("requestid") as? String ?? ""
+        var aid = def.valueForKey("aid") as? String ?? "0"
+        if (aid == "")
+        {
+            aid = "0"
+        }
+        
+        Alamofire.request(.GET, "\(ServerAdress)/help?uid=\(uid)&requestid=\(requestid)&aid=\(aid)")
+            .validate()
+            .responseJSON {
+                (response) in
+                print(response.request?.URLString)
+                let Json = JSON(response.result.value!)
+                completionHandler(result: Json["result"])
+        }
+    }
+
     
     
 

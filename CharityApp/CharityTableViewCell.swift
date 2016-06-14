@@ -21,6 +21,7 @@ class CharityTableViewCell: UITableViewCell {
     @IBOutlet weak var PersonName: UILabel!
     @IBOutlet weak var CharityName: UILabel!
     
+    @IBOutlet weak var HelpButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

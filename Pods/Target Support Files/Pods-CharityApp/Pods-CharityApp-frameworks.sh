@@ -85,13 +85,17 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-CharityApp/Alamofire.framework"
+  install_framework "Pods-CharityApp/CryptoSwift.framework"
   install_framework "Pods-CharityApp/ESPullToRefresh.framework"
   install_framework "Pods-CharityApp/SDWebImage.framework"
   install_framework "Pods-CharityApp/SwiftyJSON.framework"
+  install_framework "Pods-CharityApp/VK_ios_sdk.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-CharityApp/Alamofire.framework"
+  install_framework "Pods-CharityApp/CryptoSwift.framework"
   install_framework "Pods-CharityApp/ESPullToRefresh.framework"
   install_framework "Pods-CharityApp/SDWebImage.framework"
   install_framework "Pods-CharityApp/SwiftyJSON.framework"
+  install_framework "Pods-CharityApp/VK_ios_sdk.framework"
 fi

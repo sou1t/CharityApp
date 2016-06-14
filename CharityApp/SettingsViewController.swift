@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import SDWebImage
+import CryptoSwift
 
 class SettingsViewController: UIViewController {
     var datas: [JSON] = []
@@ -64,6 +65,17 @@ class SettingsViewController: UIViewController {
 }
 
 extension SettingsViewController:UITableViewDelegate, UITableViewDataSource{
+    
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -74,7 +86,22 @@ extension SettingsViewController:UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCellWithIdentifier("cell1", forIndexPath: indexPath) as? CardTableViewCell
         let data = datas[indexPath.row]
         if let CardNo = data["cardno"].string{
-            cell?.CardNo.text = CardNo
+            
+            do
+            {
+            let key: [UInt8] = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00]
+            let iv: [UInt8] = [1, 5, 8, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+            let encryptedtoName = NSData(base64EncodedString: CardNo, options:[])!
+            let encryptedName1 = Array(UnsafeBufferPointer(start: UnsafePointer<UInt8>(encryptedtoName.bytes), count: encryptedtoName.length))
+            let decryptedName = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).decrypt(encryptedName1)
+            let strName = String(bytes: decryptedName, encoding: NSUTF8StringEncoding)
+                cell?.CardNo.text = strName
+            print(decryptedName)
+            }
+            catch {
+                print(error)
+            }
+        
         }
         return cell!
     }
@@ -82,8 +109,54 @@ extension SettingsViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 56
     }
-
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
+     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            let data = datas[indexPath.row]
+            if let CardId = data["cardid"].string{
+                def.setValue(CardId, forKeyPath: "cardid")
+            }
+            SweetAlert().showAlert("Are you sure?", subTitle: "You file will permanently delete!", style: AlertStyle.Warning, buttonTitle:"No, cancel plx!", buttonColor:UIColorFromRGB(0xD0D0D0) , otherButtonTitle:  "Yes, delete it!", otherButtonColor: UIColorFromRGB(0xDD6B55)) { (isOtherButton) -> Void in
+                if isOtherButton == true {
+                    
+                    SweetAlert().showAlert("Cancelled!", subTitle: "Your imaginary file is safe", style: AlertStyle.Error)
+                }
+                else {
+                    
+                    server().deleteCard{(result) in
+                        if (result==true){
+                            SweetAlert().showAlert("Deleted!", subTitle: "Your imaginary file has been deleted!", style: AlertStyle.Success)
+                            server().getCardsOfUser{(result) in
+                                self.datas = result
+                                self.table1.reloadData()
+                                
+                                
+                            }
+
+                            
+                        }
+                        else
+                        {
+                            SweetAlert().showAlert("Error!", subTitle: "Error", style: AlertStyle.Error)
+                        }
+                        
+                    }
+
+                }
+            }
+            
+                        
+            // handle delete (by removing the data from your array and updating the tableview)
+        }
+    }
     
 }
 

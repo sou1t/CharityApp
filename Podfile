@@ -9,6 +9,8 @@ pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
 pod 'SDWebImage', '~>3.8'
 pod 'ESPullToRefresh', '~> 1.0'
+pod 'CryptoSwift', '~> 0.5'
+pod "VK-ios-sdk"
 
 end
 
@@ -18,6 +20,8 @@ pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
 pod 'SDWebImage', '~>3.8'
 pod 'ESPullToRefresh', '~> 1.0'
+pod 'CryptoSwift', '~> 0.5'
+pod "VK-ios-sdk"
 
 end
 
@@ -27,6 +31,8 @@ pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
 pod 'SDWebImage', '~>3.8'
 pod 'ESPullToRefresh', '~> 1.0'
+pod 'CryptoSwift', '~> 0.5'
+pod "VK-ios-sdk"
 
 end
 

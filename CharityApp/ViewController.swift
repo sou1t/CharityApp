@@ -10,6 +10,9 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+
+
+
 class ViewController: UIViewController, UITextFieldDelegate {
     var datas: JSON = []
     @IBOutlet weak var password: AwesomeTextField!
@@ -26,7 +29,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         {
             self.performSegueWithIdentifier("mainTonext", sender: self)
         }
-
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -71,17 +75,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    @IBAction func ok_click(sender: AnyObject) {
-    }
+    @IBAction func ok_click(sender: AnyObject) {}
     
-    @IBAction func vk_click(sender: AnyObject) {
-    }
+    @IBAction func vk_click(sender: AnyObject) {}
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+
 
 }
+
 
 

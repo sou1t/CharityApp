@@ -53,6 +53,7 @@
 		3F3221581D0466C8007B4A63 /* robotothinitalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221331D0466C8007B4A63 /* robotothinitalic.ttf */; };
 		3F3221591D0466C8007B4A63 /* robotothinitalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221341D0466C8007B4A63 /* robotothinitalic.woff */; };
 		3F32215A1D0466C8007B4A63 /* robotothinitalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 3F3221351D0466C8007B4A63 /* robotothinitalic.woff2 */; };
+		3F48B8171D0F0B4100E81357 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F48B8161D0F0B4100E81357 /* RegisterViewController.swift */; };
 		3F5145041D0357F40038AB05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5145031D0357F40038AB05 /* AppDelegate.swift */; };
 		3F5145061D0357F40038AB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5145051D0357F40038AB05 /* ViewController.swift */; };
 		3F5145091D0357F40038AB05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5145071D0357F40038AB05 /* Main.storyboard */; };
@@ -135,6 +136,7 @@
 		3F3221331D0466C8007B4A63 /* robotothinitalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothinitalic.ttf; path = resourses/fonts/roboto/robotothinitalic.ttf; sourceTree = "<group>"; };
 		3F3221341D0466C8007B4A63 /* robotothinitalic.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothinitalic.woff; path = resourses/fonts/roboto/robotothinitalic.woff; sourceTree = "<group>"; };
 		3F3221351D0466C8007B4A63 /* robotothinitalic.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = robotothinitalic.woff2; path = resourses/fonts/roboto/robotothinitalic.woff2; sourceTree = "<group>"; };
+		3F48B8161D0F0B4100E81357 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3F5145001D0357F40038AB05 /* CharityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5145031D0357F40038AB05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5145051D0357F40038AB05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				3F866FA71D0647EA0045E5B6 /* SettingsViewController.swift */,
 				3F866FA91D064C8C0045E5B6 /* CardTableViewCell.swift */,
 				3F3009F61D06EC33008F5A93 /* AddCardViewController.swift */,
+				3F48B8161D0F0B4100E81357 /* RegisterViewController.swift */,
 			);
 			path = CharityApp;
 			sourceTree = "<group>";
@@ -655,6 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5145061D0357F40038AB05 /* ViewController.swift in Sources */,
+				3F48B8171D0F0B4100E81357 /* RegisterViewController.swift in Sources */,
 				3F1C1FBD1D05A81600AB452F /* SweetAlert.swift in Sources */,
 				3F1C1FD31D05B6A600AB452F /* ListViewController.swift in Sources */,
 				3F1C1FBB1D0584F700AB452F /* ServerMethods.swift in Sources */,
