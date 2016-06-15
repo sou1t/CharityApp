@@ -15,6 +15,8 @@ class SettingsViewController: UIViewController {
     var datas: [JSON] = []
 
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var LoginLabel: UILabel!
+    @IBOutlet weak var NameLable: UILabel!
     @IBOutlet weak var table1: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +41,8 @@ class SettingsViewController: UIViewController {
                 let url = NSURL(string: photo)
                 self.photo.sd_setImageWithURL(url)
             }
-            
+            self.LoginLabel.text = result[0]["login"].string
+            self.NameLable.text = result[0]["name"].string
         }
 
         // Do any additional setup after loading the view.

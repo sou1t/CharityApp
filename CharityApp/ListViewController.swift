@@ -20,6 +20,7 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         server().getHelpRequests {(result) -> () in
             self.datas = result
             self.table.reloadData()
@@ -61,6 +62,7 @@ class ListViewController: UIViewController {
     {
         print("generating the TextField")
         textField.placeholder = "Сумма в рублях"
+        
         tField = textField
     }
     
@@ -70,6 +72,7 @@ class ListViewController: UIViewController {
         print("Cancelled !!")
     }
     
+
     
     
     func Clicked(sender: UIButton) {
@@ -79,27 +82,37 @@ class ListViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Отмена", style: UIAlertActionStyle.Cancel, handler:handleCancel))
             alert.addAction(UIAlertAction(title: "Готово", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction)in
                 print("Done !!")
-                def.setObject(self.tField.text, forKey: "aid")
-                let data = self.datas[index]
-                let id = data["requestid"].string
-                def.setObject(id, forKey: "requestid")
-                server().help{(result) in
-                    if (result == true){
-                        
-                        let name = data["cardname"].string!
-                        let aidsum = self.tField.text!
-                        SweetAlert().showAlert("\(name)", subTitle: "Вы пожертвовали \(aidsum)руб", style: AlertStyle.Success)
-                        server().getHelpRequests {(result) -> () in
-                            self.datas = result
-                            self.table.reloadData()
+                if Int(self.tField.text!) != nil
+                {
+                    def.setObject(self.tField.text, forKey: "aid")
+                    let data = self.datas[index]
+                    let id = data["requestid"].string
+                    def.setObject(id, forKey: "requestid")
+                    server().help{(result) in
+                        if (result == true){
+                            
+                            let name = data["cardname"].string!
+                            let aidsum = self.tField.text!
+                            SweetAlert().showAlert("\(name)", subTitle: "Вы пожертвовали \(aidsum)руб", style: AlertStyle.Success)
+                            server().getHelpRequests {(result) -> () in
+                                self.datas = result
+                                self.table.reloadData()
+                            }
                         }
+                        else
+                        {
+                            SweetAlert().showAlert("Ошибка", subTitle: "Повторите попытку", style: AlertStyle.Error)
+                        }
+                        
                     }
-                    else
-                    {
-                       SweetAlert().showAlert("Ошибка", subTitle: "Повторите попытку", style: AlertStyle.Error)
-                    }
-                    
+
                 }
+                else
+                {
+                    SweetAlert().showAlert("Ошибка", subTitle: "Повторите попытку", style: AlertStyle.Error)
+                }
+                
+
                 print("Item : \(self.tField.text) index: \(index+1)")
             }))
             self.presentViewController(alert, animated: true, completion: {

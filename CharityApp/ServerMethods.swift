@@ -148,7 +148,29 @@ class server {
         }
     }
 
-    
+    func Registration(completionHandler: ((result: JSON)->())){
+        
+        let login = def.valueForKey("user") as? String ?? ""
+        let pass = def.valueForKey("pass") as? String ?? ""
+        let name = def.valueForKey("Uname") as? String ?? ""
+        let photo = def.valueForKey("photo") as? String ?? ""
+        
+        let parameters = [
+            "login": login,
+            "pass": pass,
+            "name": name,
+            "photo": photo,
+        ]
+        
+        Alamofire.request(.POST, "\(ServerAdress)/register", parameters: parameters, encoding: .URL).responseJSON{
+            (response) in
+            print(response.request?.URLString)
+            let Json = JSON(response.result.value!)
+            completionHandler(result: Json["result"])
+            
+        }
+    }
+
     
 
     
